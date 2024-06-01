@@ -1,0 +1,141 @@
+---
+author: '318356995'
+date: "29 1 2023"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(sna)
+library(network)
+library(igraph)
+library(intergraph)
+library(ergm)
+library(statnet)
+library(goft)
+library(fitdistrplus)
+library(geodist)
+library(dplyr)
+set.seed(12)
+```
+
+
+##read nets
+```{r read nets}
+sus<-igraph::read_graph("C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/SUS.net",format="pajek")
+rc<-igraph::read_graph("C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/RC.net",format="pajek")
+
+```
+
+
+```{r 3.b}
+print("---SUS:---")
+vcount(sus)
+ecount(sus)
+edge_density(sus)
+components(sus)$no
+diameter(sus)
+average.path.length(sus)
+
+degree_centralization_inSUS<-centralization.degree(sus, mode="in")$centralization
+degree_centralization_inSUS
+
+degree_centralization_outSUS<-centralization.degree(sus, mode="out")$centralization
+degree_centralization_outSUS
+
+betweenness_centralizationSUS<-centralization.betweenness(sus, directed = FALSE)$centralization
+betweenness_centralizationSUS
+
+closeness_centralizationSUS<-centralization.closeness(sus, mode="all")$centralization
+closeness_centralizationSUS
+
+
+
+print("---RC:---")
+vcount(rc)
+ecount(rc)
+edge_density(rc)
+components(rc)$no
+diameter(rc)
+average.path.length(rc)
+degree_centralization_inRC<-centralization.degree(rc, mode="in")$centralization
+degree_centralization_inRC
+
+degree_centralization_outRC<-centralization.degree(rc, mode="out")$centralization
+degree_centralization_outRC
+
+betweenness_centralizationRC<-centralization.betweenness(rc, directed = FALSE)$centralization
+betweenness_centralizationRC
+
+closeness_centralizationRC<-centralization.closeness(rc, mode="all")$centralization
+closeness_centralizationRC
+
+```
+
+
+
+```{r 3.c}
+
+randSUS<-sample_gnm(vcount(sus), ecount(sus))
+randRC<-sample_gnm(vcount(sus), ecount(sus))
+
+#H0: same disttribution rejeced if p<0.05
+ks_sus1<-ks.test(igraph::degree(randSUS, mode="in"),degree(sus, mode="in")) 
+ks_sus1
+ks_sus2<-ks.test(igraph::degree(randSUS, mode="out"),degree(sus, mode="out")) 
+ks_sus2
+ks_sus3<-ks.test(igraph::betweenness(randSUS, directed = FALSE),betweenness(sus, directed = FALSE)) 
+ks_sus3
+ks_sus4<-ks.test(igraph::closeness(randSUS, mode="all"),closeness(sus, mode="all")) 
+ks_sus3
+
+ks_rc1<-ks.test(igraph::degree(randRC, mode="in"),degree(rc, mode="in")) 
+ks_rc1
+ks_rc2<-ks.test(igraph::degree(randRC, mode="out"),degree(rc, mode="out")) 
+ks_rc2
+ks_rc3<-ks.test(igraph::betweenness(randRC, directed = FALSE),betweenness(rc, directed = FALSE)) 
+ks_rc3
+ks_rc4<-ks.test(igraph::closeness(randRC, mode="all"),closeness(rc, mode="all")) 
+ks_rc4
+
+
+```
+
+
+```{r 3.d}
+
+average_path_lengthSUS <- average.path.length(sus, directed=FALSE)
+average_path_lengthSUS
+average_path_lengthRC <- average.path.length(rc, directed=FALSE)
+average_path_lengthRC
+
+
+diameter(sus, directed=FALSE)
+diameter(rc, directed=FALSE)
+
+mean(eccentricity(sus, mode="all"))
+mean(eccentricity(rc, mode="all"))
+
+```
+
+
+```{r 3.e}
+betweenness_sus <- head(sort(betweenness(sus), decreasing =TRUE),5)
+betweenness_sus1 <- betweenness(sus)
+top_betwenness_sus <- which(betweenness_sus1 %in% (betweenness_sus))
+
+betweenness_rc <- head(sort(betweenness(rc), decreasing =TRUE),5)
+betweenness_rc1 <- betweenness(rc)
+top_betwenness_rc <- which(betweenness_rc1 %in% (betweenness_rc))
+
+
+par(mfrow=c(1,2))
+plot(sus, layout=layout_with_dh(sus), vertex.size=betweenness_sus1*0.1, vertex.label.cex=0.5, 
+     main = "SUS Betweenneess")
+plot(rc, layout=layout_with_dh(rc), vertex.size=betweenness_rc1*0.7, vertex.label.cex=0.5, 
+     main = "RC Betweenneess")
+
+```

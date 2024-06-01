@@ -1,0 +1,474 @@
+---
+title: "Q1"
+author: '318356995'
+date: "29 1 2023"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r libraries}
+library(sna)
+library(network)
+library(igraph)
+library(intergraph)
+library(ergm)
+library(statnet)
+library(goft)
+library(fitdistrplus)
+library(geodist)
+library(dplyr)
+set.seed(12)
+```
+
+
+
+```{r load networks, echo=FALSE}
+filePath="C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/wheat_2016exp.csv"
+df2016<-read.csv(filePath,header=TRUE)
+df2016_1<-df2016[ !is.na(df2016$Netweight..kg.) & !is.na(df2016$Reporter.ISO) & !is.na(df2016$Partner.ISO), c("Reporter.ISO","Partner.ISO", "Netweight..kg.", "Trade.Value..US..")]
+
+
+#group by reporter, partner
+df2016_2 <- df2016_1 %>% group_by(Reporter.ISO, Partner.ISO) %>%
+            summarise(sum_net_weight=sum(Netweight..kg.),
+                      sum_trade_value = sum(Trade.Value..US..),
+                     .groups = 'drop'
+                    )
+df2016_3<-df2016_2[(df2016_2$sum_net_weight>2000),c("Reporter.ISO","Partner.ISO", "sum_net_weight", "sum_trade_value")]
+
+
+net2016<-graph_from_data_frame(df2016_3, directed = T, vertices = NULL)
+
+
+filePath="C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/wheat_2021exp.csv"
+df2021<-read.csv(filePath,header=TRUE)
+df2021_1<-df2021[ !is.na(df2021$Netweight..kg.) & !is.na(df2021$Reporter.ISO) & !is.na(df2021$Partner.ISO), c("Reporter.ISO","Partner.ISO", "Netweight..kg.", "Trade.Value..US..")]
+
+
+#group by reporter, partner
+df2021_2 <- df2021_1 %>% group_by(Reporter.ISO, Partner.ISO) %>%
+            summarise(sum_net_weight=sum(Netweight..kg.),
+                      sum_trade_value = sum(Trade.Value..US..),
+                     .groups = 'drop'
+                    )
+df2021_3<-df2021_2[(df2021_2$sum_net_weight>2000),c("Reporter.ISO","Partner.ISO", "sum_net_weight", "sum_trade_value")]
+
+
+net2021<-graph_from_data_frame(df2021_3, directed = T, vertices = NULL)
+
+
+```
+
+
+
+```{r 1.a, echo=FALSE}
+print("2016:")
+exporters2016<-unique(df2016_3$Reporter.ISO)
+paste("num of exporters in 2016:", length(exporters2016))
+importers2016<-unique(df2016_3$Partner.ISO)
+paste("num of importers in 2016:", length(importers2016))
+intersect2016<-intersect(exporters2016, importers2016)
+paste("num of countries that exported and imported in 2016:", length(intersect2016))
+
+print("2021:")
+exporters2021<-unique(df2021_3$Reporter.ISO)
+paste("num of exporters in 2021:", length(exporters2021))
+importers2021<-unique(df2021_3$Partner.ISO)
+paste("num of importers in 2021:", length(importers2021))
+intersect2021<-intersect(exporters2021, importers2021)
+paste("num of countries that exported and imported in 2021:", length(intersect2021))
+
+intersect2021_2016<-intersect(intersect2021, intersect2016)
+paste("num of countries that exported and imported in 2021 and in 2016:", length(intersect2021_2016))
+
+```
+
+
+
+```{r 1.b, echo=FALSE}
+Cereals<-c(100111, 100119, 100191, 100199)
+Wheat_By_Products<-c(110100, 110311, 110811, 110900, 230230)
+
+
+###2016###
+
+#2016 - add commodity code to 2016 net, group by commodity, reporter, partner and filter > 2000
+df2016_4<-df2016[!(is.na(df2016$Netweight..kg.)) , c("Reporter.ISO","Partner.ISO", "Netweight..kg.", "Trade.Value..US..", "Commodity.Code")]
+
+df2016_5 <- df2016_4 %>% group_by(Reporter.ISO, Partner.ISO, Commodity.Code) %>%
+            summarise(sum_net_weight=sum(Netweight..kg.),
+                      sum_trade_value = sum(Trade.Value..US..),
+                     .groups = 'drop'
+                    )
+df2016_5<-df2016_5[df2016_5$sum_net_weight>2000 , c("Reporter.ISO","Partner.ISO", "sum_net_weight", "sum_trade_value", "Commodity.Code")]
+
+
+
+#keep only cereal products
+df2016_Cereals<-df2016_5[(df2016_5$Commodity.Code %in% Cereals) & !(is.na(df2016_5$sum_net_weight)) , c("Reporter.ISO", "Partner.ISO", "sum_trade_value", "sum_net_weight", "Commodity.Code")]
+
+df2016_Cereals <- df2016_Cereals %>% group_by(Reporter.ISO, Partner.ISO) %>%
+            summarise(sum_net_weight=sum(sum_net_weight),
+                      sum_trade_value = sum(sum_trade_value),
+                     .groups = 'drop'
+                    )
+
+
+#keep only wheat products
+df2016_Wheat_By_Products<-df2016_5[(df2016_5$Commodity.Code %in% Wheat_By_Products) & !(is.na(df2016_5$sum_trade_value)) & !(is.na(df2016_5$sum_net_weight) ) , c("Reporter.ISO", "Partner.ISO", "sum_trade_value", "sum_net_weight", "Commodity.Code")]
+
+df2016_Wheat_By_Products <- df2016_Wheat_By_Products %>% group_by(Reporter.ISO, Partner.ISO) %>%
+            summarise(sum_net_weight=sum(sum_net_weight),
+                      sum_trade_value = sum(sum_trade_value),
+                     .groups = 'drop'
+                    )
+
+#create 2016 networks
+net2016_Cereals<-graph_from_data_frame(df2016_Cereals, directed = T, vertices = NULL)
+net2016_Wheat_By_Products<-graph_from_data_frame(df2016_Wheat_By_Products, directed = T, vertices = NULL)
+
+
+
+
+###2021###
+
+#2021 - add commodity code to first net, group by commodity, reporter, partner and filter > 2000
+df2021_4<-df2021[ !(is.na(df2021$Netweight..kg.)) , c("Reporter.ISO","Partner.ISO", "Netweight..kg.", "Trade.Value..US..", "Commodity.Code")]
+
+df2021_5 <- df2021_4 %>% group_by(Reporter.ISO, Partner.ISO, Commodity.Code) %>%
+            summarise(sum_net_weight=sum(Netweight..kg.),
+                      sum_trade_value = sum(Trade.Value..US..),
+                     .groups = 'drop'
+                    )
+df2021_5<-df2021_5[df2021_5$sum_net_weight>2000 , c("Reporter.ISO","Partner.ISO", "sum_net_weight", "sum_trade_value", "Commodity.Code")]
+
+
+
+#keep only cereal products
+df2021_Cereals<-df2021_5[(df2021_5$Commodity.Code %in% Cereals) & !(is.na(df2021_5$sum_net_weight)) , c("Reporter.ISO", "Partner.ISO", "sum_trade_value", "sum_net_weight", "Commodity.Code")]
+
+
+df2021_Cereals <- df2021_Cereals %>% group_by(Reporter.ISO, Partner.ISO) %>%
+            summarise(sum_net_weight=sum(sum_net_weight),
+                      sum_trade_value = sum(sum_trade_value),
+                     .groups = 'drop'
+                    )
+
+#keep only wheat products
+df2021_Wheat_By_Products<-df2021_5[(df2021_5$Commodity.Code %in% Wheat_By_Products) & !(is.na(df2021_5$sum_net_weight) ) , c("Reporter.ISO", "Partner.ISO", "sum_trade_value", "sum_net_weight", "Commodity.Code")]
+
+
+df2021_Wheat_By_Products <- df2021_Wheat_By_Products %>% group_by(Reporter.ISO, Partner.ISO) %>%
+            summarise(sum_net_weight=sum(sum_net_weight),
+                      sum_trade_value = sum(sum_trade_value),
+                     .groups = 'drop'
+                    )
+
+
+#create 2021 networks
+net2021_Cereals<-graph_from_data_frame(df2021_Cereals, directed = T, vertices = NULL)
+net2021_Wheat_By_Products<-graph_from_data_frame(df2021_Wheat_By_Products, directed = T, vertices = NULL)
+
+
+
+###central countries##
+
+###2021
+#cereal
+print("---2021 cereal:---")
+betweenness2021C <- head(sort(betweenness(net2021_Cereals), decreasing =TRUE),5)
+print("top 5 countries by betweenness:")
+print(betweenness2021C)
+print("")
+
+degree2021C <- head(sort(degree(net2021_Cereals), decreasing =TRUE),5)
+print("top 5 countries by degree:")
+print(degree2021C)
+print("")
+
+closeness2021C <- head(sort(closeness(net2021_Cereals), decreasing =TRUE),5)
+print("top 5 countries by closeness:")
+print(closeness2021C)
+print("")
+
+
+#wheat products
+print("---2021 wheat products:---")
+betweenness2021W <- head(sort(betweenness(net2021_Wheat_By_Products), decreasing =TRUE),5)
+print("top 5 countries by betweenness:")
+print(betweenness2021W)
+print("")
+
+degree2021W <- head(sort(degree(net2021_Wheat_By_Products), decreasing =TRUE),5)
+print("top 5 countries by degree:")
+print(degree2021W)
+print("")
+
+closeness2021W <- head(sort(closeness(net2021_Wheat_By_Products), decreasing =TRUE),5)
+print("top 5 countries by closeness:")
+print(closeness2021W)
+print("")
+
+
+###2016
+#cereal
+print("---2016 cereal:---")
+betweenness2016C <- head(sort(betweenness(net2016_Cereals), decreasing =TRUE),5)
+print("top 5 countries by betweenness:")
+print(betweenness2016C)
+print("")
+
+degree2016C <- head(sort(degree(net2016_Cereals), decreasing =TRUE),5)
+print("top 5 countries by degree:")
+print(degree2016C)
+print("")
+
+closeness2016C <- head(sort(closeness(net2016_Cereals), decreasing =TRUE),5)
+print("top 5 countries by closeness:")
+print(closeness2016C)
+print("")
+
+
+#wheat products
+print("---2016 wheat products:---")
+betweenness2016W <- head(sort(betweenness(net2016_Wheat_By_Products), decreasing =TRUE),5)
+print("top 5 countries by betweenness:")
+print(betweenness2016W)
+print("")
+
+degree2016W <- head(sort(degree(net2016_Wheat_By_Products), decreasing =TRUE),5)
+print("top 5 countries by degree:")
+print(degree2016W)
+print("")
+
+closeness2016W <- head(sort(closeness(net2016_Wheat_By_Products), decreasing =TRUE),5)
+print("top 5 countries by closeness:")
+print(closeness2016W)
+
+```
+
+
+
+
+
+```{r 1.c, echo=FALSE}
+
+##add attributes to data frame
+attributes <- read.csv("C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/country_data.csv")
+
+#list of indexed countries
+d1<-data.frame(ccode=as_ids(V(net2021)),iord=1:length(V(net2021)))
+
+#merge countries with attributes
+d2<-(merge(d1,attributes, by.x='ccode',by.y='Country.Code',all.x=T))
+d2$longitude<-as.character(d2$longitude)
+d2$latitude<-as.character(d2$latitude)
+
+#fill blanks with means
+d3<-d2[order(d2$iord),c("ccode","Agricultural.land..sq..km.", "GNI.per.capita..PPP..current.international...", "Population..total" ,"Prevalence.of.undernourishment....of.population.", "continentLabel","longitude", "latitude")]
+
+d3$Agricultural.land..sq..km.[is.na(d3$Agricultural.land..sq..km.)]<-mean(d3$Agricultural.land..sq..km.,na.rm=T)
+
+d3$GNI.per.capita..PPP..current.international...[is.na(d3$GNI.per.capita..PPP..current.international...)]<-
+  mean(d3$GNI.per.capita..PPP..current.international...,na.rm=T)
+
+d3$Population..total[is.na(d3$Population..total)]<-mean(d3$Population..total,na.rm=T)
+
+d3$Prevalence.of.undernourishment....of.population.[is.na(d3$Prevalence.of.undernourishment....of.population.)]<-
+  mean(d3$Prevalence.of.undernourishment....of.population.,na.rm=T)
+
+d3<-d3[!(is.na(d3$ccode)),]
+
+
+#add attributes from the data frame to the network
+for(cn in colnames(d3)) {
+  net2021<- set_vertex_attr(net2021, cn,  1:nrow(d3), value=d3[,cn])
+}
+
+#remove vertices with no longitude (and latitude)
+net2021 <- delete.vertices(net2021, which(is.na(vertex_attr(net2021, "longitude"))))
+
+
+#calculate distance between reporter and partner for each edge
+dist<-c()
+for (i in 1:nrow(df2021_3)){
+  reporter<-df2021_3$Reporter.ISO[i]
+  partner<-df2021_3$Partner.ISO[i]
+  reporterLO<-attributes[attributes$Country.Code==reporter,][10]
+  reporterLA<-attributes[attributes$Country.Code==reporter,][11]
+  partnerLO<-attributes[attributes$Country.Code==partner,][10]
+  partnerLA<-attributes[attributes$Country.Code==partner,][11]
+  rep<-c(reporterLO, reporterLA)
+  par<-c(partnerLO, partnerLA)
+  dist<-append(dist,geodist(rep,par))
+}
+
+#get all appropriate distances and set them as edge attributes
+dist1<-dist[!is.na(dist)]
+E(net2021)$dist<-dist1
+
+
+#models
+set.seed(12)
+model0<-ergm(asNetwork(net2021)~edges)
+summary(model0)
+model1<-ergm(asNetwork(net2021)~ edges + edgecov(asNetwork(net2021), attrname='dist'))
+summary(model1)
+
+
+```
+
+
+
+
+
+```{r 1.d, echo=FALSE}
+set.seed(12)
+model.02<-ergm(asNetwork(net2021)~edges + 
+                 nodecov("Agricultural.land..sq..km.")+ 
+                 nodecov("GNI.per.capita..PPP..current.international...")+
+                 nodeicov("Prevalence.of.undernourishment....of.population.")+
+                 nodeocov("Prevalence.of.undernourishment....of.population.")+
+                 nodematch("continentLabel", diff=T))
+summary(model.02)
+
+```
+
+
+
+
+```{r 1.e, echo=FALSE}
+#israel-iran
+p1<-plogis(model.02$coef[1]+
+         model.02$coef[2]*(d3[d3$ccode=='ISR',]$Agricultural.land..sq..km.+ 
+                             d3[d3$ccode=='IRN',]$Agricultural.land..sq..km.)+
+           
+         model.02$coef[3]*(d3[d3$ccode=='ISR',]$GNI.per.capita..PPP..current.international...+
+                             d3[d3$ccode=='IRN',]$GNI.per.capita..PPP..current.international...)+
+           
+         model.02$coef[4]*(d3[d3$ccode=='IRN',]$Prevalence.of.undernourishment....of.population.)+
+           
+         model.02$coef[5]*(d3[d3$ccode=='ISR',]$Prevalence.of.undernourishment....of.population.)+
+           
+         model.02$coef[7]) 
+print(p1)
+
+
+
+#israel-italy
+p2<-plogis(model.02$coef[1]+
+         model.02$coef[2]*(d3[d3$ccode=='ISR',]$Agricultural.land..sq..km.+ 
+                             d3[d3$ccode=='ITA',]$Agricultural.land..sq..km.)+
+           
+         model.02$coef[3]*(d3[d3$ccode=='ISR',]$GNI.per.capita..PPP..current.international...+
+                             d3[d3$ccode=='ITA',]$GNI.per.capita..PPP..current.international...)+
+           
+         model.02$coef[4]*(d3[d3$ccode=='ITA',]$Prevalence.of.undernourishment....of.population.)+
+           
+         model.02$coef[5]*(d3[d3$ccode=='ISR',]$Prevalence.of.undernourishment....of.population.))
+print(p2)
+
+
+#israel-brazil
+p3<-plogis(model.02$coef[1]+
+         model.02$coef[2]*(d3[d3$ccode=='ISR',]$Agricultural.land..sq..km.+ 
+                             d3[d3$ccode=='BRA',]$Agricultural.land..sq..km.)+
+           
+         model.02$coef[3]*(d3[d3$ccode=='ISR',]$GNI.per.capita..PPP..current.international...+
+                             d3[d3$ccode=='BRA',]$GNI.per.capita..PPP..current.international...)+
+           
+         model.02$coef[4]*(d3[d3$ccode=='BRA',]$Prevalence.of.undernourishment....of.population.)+
+           
+         model.02$coef[5]*(d3[d3$ccode=='ISR',]$Prevalence.of.undernourishment....of.population.))
+print(p3)
+
+
+#syria-israel
+p4<-plogis(model.02$coef[1]+
+         model.02$coef[2]*(d3[d3$ccode=='SYR',]$Agricultural.land..sq..km.+ 
+                             d3[d3$ccode=='ISR',]$Agricultural.land..sq..km.)+
+           
+         model.02$coef[3]*(d3[d3$ccode=='SYR',]$GNI.per.capita..PPP..current.international...+
+                             d3[d3$ccode=='ISR',]$GNI.per.capita..PPP..current.international...)+
+           
+         model.02$coef[4]*(d3[d3$ccode=='ISR',]$Prevalence.of.undernourishment....of.population.)+
+           
+         model.02$coef[5]*(d3[d3$ccode=='SYR',]$Prevalence.of.undernourishment....of.population.)+
+           
+         model.02$coef[7])
+print(p4)
+```
+
+
+
+
+```{r 1.f, echo=FALSE}
+# set.seed(12)
+# model.03<-ergm(asNetwork(net2021)~edges + 
+#                  nodecov("Agricultural.land..sq..km.")+ 
+#                  nodecov("GNI.per.capita..PPP..current.international...")+
+#                  nodeicov("Prevalence.of.undernourishment....of.population.")+
+#                  nodeocov("Prevalence.of.undernourishment....of.population.")+
+#                  nodematch("continentLabel", diff=T)+
+#                  gwodegree(decay=0, fixed=TRUE))
+# summary(model.03)
+```
+
+
+
+
+```{r 1.g, echo=FALSE}
+set.seed(12)
+#random graphs triad census 2021
+tcRand2021<-array(dim=c(100,16))
+for(i in 1:100){
+  tcRand2021[i,]<-igraph::triad.census(sample_gnm(vcount(net2021),ecount(net2021),directed=T,loops=F))
+}
+
+#circle triad count 2021
+tc2021<-igraph::triad.census(net2021)[10]
+#t-test for certain triad in our net and random nets
+print("2021:")
+t.test(tcRand2021[,10],mu=tc2021,alternative = "greater")
+
+
+
+#random graphs triad census 2016
+tcRand2016<-array(dim=c(100,16))
+for(i in 1:100){
+  tcRand2016[i,]<-igraph::triad.census(sample_gnm(vcount(net2016),ecount(net2016),directed=T,loops=F))
+}
+
+#circle triad count 2016
+tc2016<-igraph::triad.census(net2016)[10]
+#t-test for certain triad in our net and random nets
+print("2016:")
+t.test(tcRand2016[,10],mu=tc2016,alternative = "greater")
+
+```
+
+```{r 1.h, echo=FALSE}
+set.seed(12)
+net2021_1<-graph_from_data_frame(df2021_3, directed = T, vertices = NULL)
+net2016_1<-graph_from_data_frame(df2016_3, directed = T, vertices = NULL)
+
+all_countries<-c(as_ids(V(net2021_1)),as_ids(V(net2016_1)))
+all_countries<-unique(all_countries)
+
+net2021_1<-add_vertices(net2021_1,nv = length(setdiff(all_countries,as_ids(V(net2021_1)))),name=setdiff(all_countries,as_ids(V(net2021_1))))
+
+net2016_1<-add_vertices(net2016_1,nv = length(setdiff(all_countries,as_ids(V(net2016_1)))),name=setdiff(all_countries,as_ids(V(net2016_1))))
+
+net2021_qap<-intergraph::asNetwork(net2021_1)
+net2016_qap<-intergraph::asNetwork(net2016_1)
+
+
+qap1<-qaptest(list(net2021_qap,net2016_qap),FUN = gcor,g1=1,g2=2)
+summary(qap1)
+plot(qap1)
+
+```
