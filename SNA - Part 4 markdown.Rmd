@@ -1,0 +1,151 @@
+---
+title: "SNA - Part 4"
+author: "318356995"
+date: "23 1 2023"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r libraries}
+library(sna)
+library(network)
+library(igraph)
+library(intergraph)
+library(ergm)
+library(statnet)
+set.seed(12)
+```
+
+
+
+```{r form network}
+filePath=choose.files()
+net<-read.csv(filePath,header=TRUE, row.names = 1)
+
+
+#network
+myNet<-as.network.matrix(net, loops=TRUE, multiple=FALSE, ignore.eval=FALSE, names.eval='weight', matrix.type = "adjacency")
+myIgraph<-asIgraph(myNet)
+
+myNet %v% 'inWeight' <- colSums(net)
+myNet %v% 'outWeight' <- rowSums(net)
+
+filePath=choose.files()
+areas<-read.csv(filePath,header=TRUE, row.names = 1)
+myNet %v% 'Area' <- areas
+```
+
+
+
+```{r 1}
+# -------- 1 -------
+set.seed(12)
+rgnm<-rgnm(1,467,2179, mode="digraph",return.as.edgelist=FALSE)
+rgnm_net<-as.network(rgnm)
+rgnm_graph<-asIgraph(rgnm_net)
+
+qt<-qaptest(list(myNet,rgnm_net),gcor,g1=1,g2=2,reps=1000) #gcov, hdist
+summary(qt)
+```
+
+
+```{r 2}
+# -------- 2 -------
+set.seed(12)
+net.01<-ergm(myNet~edges)
+summary(net.01)
+gof(net.01)
+plot(gof(net.01))
+```
+
+
+```{r 3.1}
+# -------- 3 -------
+set.seed(12)
+net.02<-ergm(myNet~edges+absdiff('inWeight'))
+summary(net.02)
+gof(net.02)
+plot(gof(net.02))
+```
+
+
+
+```{r 3.2}
+set.seed(12)
+net.03<-ergm(myNet~edges+ nodematch('Area'))
+summary(net.03)
+gof(net.03)
+plot(gof(net.03))
+```
+
+
+```{r 3.3}
+set.seed(12)
+net.04<-ergm(myNet~edges+ nodeifactor("Area"))
+summary(net.04)
+gof(net.04)
+plot(gof(net.04))
+```
+
+
+
+
+
+```{r 4.1}
+# -------- 4 -------
+
+# central cities
+degrees<-degree(myIgraph, mode="out")
+sorted_indices <- order(degrees, decreasing = TRUE)
+top_5_indices <- head(sorted_indices, 5)
+
+top_5_nodes <-c()
+for (i in 1:467) {
+  for (j in 1:5) {
+      if (i == top_5_indices[j]){
+        top_5_nodes <- append(top_5_nodes, vertex_attr(myIgraph, 'vertex.names', index =i))
+      }
+  }
+}
+
+top_5_nodes 
+
+```
+
+
+
+
+```{r 4.2}
+# geodesic distribution
+distances <- distances(myIgraph, mode = "out")
+vec <- as.vector(distances)
+
+distances_vec <- c()
+for (x in 1:length(vec)) {
+  if (vec[x] != Inf){
+      distances_vec<-append(distances_vec, vec[x])    
+  }
+}
+
+mean_geodesic<-mean(distances_vec)
+mean_geodesic
+
+```
+
+
+
+```{r 4.3}
+# correlation 
+outWeight <- rowSums(net)
+degree <- degree(myIgraph, mode="out")
+correlation <- cor(degree, outWeight)
+correlation
+
+plot(degree, outWeight)
+```
