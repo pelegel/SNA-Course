@@ -1,0 +1,298 @@
+"","iso3c","date","iso2c","country","SP.POP.TOTL","AG.SRF.TOTL.K2","NY.GDP.PCAP.CN","SL.GDP.PCAP.EM.KD","IT.NET.USER.ZS","name","alpha.2","country.code","iso_3166.2","region","sub.region","intermediate.region","region.code","sub.region.code","intermediate.region.code"
+"1","ABW","2016","AW","Aruba",104822,180,NA,NA,93.542453865048,"Aruba","AW",533,"ISO 3166-2:AW","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"2","AFG","2016","AF","Afghanistan",34656032,652860,38129.5526676753,5948.97900390625,10.5957264186601,"Afghanistan","AF",4,"ISO 3166-2:AF","Asia","Southern Asia","",142,34,NA
+"3","AGO","2016","AO","Angola",28813463,1246700,541264.547062601,14407.15625,13,"Angola","AO",24,"ISO 3166-2:AO","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"4","AIA",NA,NA,NA,NA,NA,NA,NA,NA,"Anguilla","AI",660,"ISO 3166-2:AI","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"5","ALA",NA,NA,NA,NA,NA,NA,NA,NA,"Åland Islands","AX",248,"ISO 3166-2:AX","Europe","Northern Europe","",150,154,NA
+"6","ALB","2016","AL","Albania",2876101,28750,512079.026431965,27535.59765625,66.363444701023,"Albania","AL",8,"ISO 3166-2:AL","Europe","Southern Europe","",150,39,NA
+"7","AND","2016","AD","Andorra",77281,470,33437.7143152909,NA,97.9306371220021,"Andorra","AD",20,"ISO 3166-2:AD","Europe","Southern Europe","",150,39,NA
+"8","ARB","2016","1A","Arab World",406452690,13152649.5,NA,48466.8901577432,42.5250402156304,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"9","ARE","2016","AE","United Arab Emirates",9269612,83600,138167.556883719,48807.92578125,90.6000073180483,"United Arab Emirates","AE",784,"ISO 3166-2:AE","Asia","Western Asia","",142,145,NA
+"10","ARG","2016","AR","Argentina",43847430,2780400,183596.745113682,45108.96484375,70.9689808206024,"Argentina","AR",32,"ISO 3166-2:AR","Americas","Latin America and the Caribbean","South America",19,419,5
+"11","ARM","2016","AM","Armenia",2924816,29740,1736815.10221498,19862.58203125,67,"Armenia","AM",51,"ISO 3166-2:AM","Asia","Western Asia","",142,145,NA
+"12","ASM","2016","AS","American Samoa",55599,200,11834.7452292307,NA,NA,"American Samoa","AS",16,"ISO 3166-2:AS","Oceania","Polynesia","",9,61,NA
+"13","ATA",NA,NA,NA,NA,NA,NA,NA,NA,"Antarctica","AQ",10,"ISO 3166-2:AQ","","","",NA,NA,NA
+"14","ATF",NA,NA,NA,NA,NA,NA,NA,NA,"French Southern Territories","TF",260,"ISO 3166-2:TF","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"15","ATG","2016","AG","Antigua and Barbuda",100963,440,39047.8759545576,NA,73,"Antigua and Barbuda","AG",28,"ISO 3166-2:AG","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"16","AUS","2016","AU","Australia",24210809,7741220,68352.2801737026,91149.21875,88.2386580521762,"Australia","AU",36,"ISO 3166-2:AU","Oceania","Australia and New Zealand","",9,53,NA
+"17","AUT","2016","AT","Austria",8731471,83879,40462.4741924929,91431.0390625,84.3233312921004,"Austria","AT",40,"ISO 3166-2:AT","Europe","Western Europe","",150,155,NA
+"18","AZE","2016","AZ","Azerbaijan",9757812,86600,6189.25636197951,31779.876953125,78.2,"Azerbaijan","AZ",31,"ISO 3166-2:AZ","Asia","Western Asia","",142,145,NA
+"19","BDI","2016","BI","Burundi",10524117,27830,472764.625640327,1529.21594238281,5.17362677652886,"Burundi","BI",108,"ISO 3166-2:BI","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"20","BEL","2016","BE","Belgium",11338476,30530,37310.8696442097,100770.8515625,86.5165,"Belgium","BE",56,"ISO 3166-2:BE","Europe","Western Europe","",150,155,NA
+"21","BEN","2016","BJ","Benin",10872298,114760,468144.636947957,4479.89892578125,11.994047908223,"Benin","BJ",204,"ISO 3166-2:BJ","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"22","BES",NA,NA,NA,NA,NA,NA,NA,NA,"Bonaire, Sint Eustatius and Saba","BQ",535,"ISO 3166-2:BQ","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"23","BFA","2016","BF","Burkina Faso",18646433,274220,371934.836008581,4844.8779296875,13.96,"Burkina Faso","BF",854,"ISO 3166-2:BF","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"24","BGD","2016","BD","Bangladesh",162951560,147630,106342.259012433,9571.7001953125,18.2469380029449,"Bangladesh","BD",50,"ISO 3166-2:BD","Asia","Southern Asia","",142,34,NA
+"25","BGR","2016","BG","Bulgaria",7127822,111000,13205.9835388706,44951.359375,59.825547661014,"Bulgaria","BG",100,"ISO 3166-2:BG","Europe","Eastern Europe","",150,151,NA
+"26","BHR","2016","BH","Bahrain",1425171,771,8489.73912604172,72523.3203125,97.9999807024146,"Bahrain","BH",48,"ISO 3166-2:BH","Asia","Western Asia","",142,145,NA
+"27","BHS","2016","BS","Bahamas, The",391232,13880,28785.4776705382,39968.90234375,80,"Bahamas","BS",44,"ISO 3166-2:BS","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"28","BIH","2016","BA","Bosnia and Herzegovina",3516816,51210,8501.74163220368,38093.08203125,54.7370743874818,"Bosnia and Herzegovina","BA",70,"ISO 3166-2:BA","Europe","Southern Europe","",150,39,NA
+"29","BLM",NA,NA,NA,NA,NA,NA,NA,NA,"Saint Barthélemy","BL",652,"ISO 3166-2:BL","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"30","BLR","2016","BY","Belarus",9501534,207600,9926.96547736397,30936.271484375,71.1130457603832,"Belarus","BY",112,"ISO 3166-2:BY","Europe","Eastern Europe","",150,151,NA
+"31","BLZ","2016","BZ","Belize",366954,22970,9489.47279495523,17918.4765625,44.57574032,"Belize","BZ",84,"ISO 3166-2:BZ","Americas","Latin America and the Caribbean","Central America",19,419,13
+"32","BMU","2016","BM","Bermuda",65376,50,NA,NA,98,"Bermuda","BM",60,"ISO 3166-2:BM","Americas","Northern America","",19,21,NA
+"33","BOL","2016","BO","Bolivia",10887882,1098580,21455.246575964,15080.90625,39.6975146032685,"Bolivia (Plurinational State of)","BO",68,"ISO 3166-2:BO","Americas","Latin America and the Caribbean","South America",19,419,5
+"34","BRA","2016","BR","Brazil",207652865,8515770,30179.6702877179,31680.580078125,60.8725400681261,"Brazil","BR",76,"ISO 3166-2:BR","Americas","Latin America and the Caribbean","South America",19,419,5
+"35","BRB","2016","BB","Barbados",284996,430,31783.2530982891,31890.701171875,79.5493978888735,"Barbados","BB",52,"ISO 3166-2:BB","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"36","BRN","2016","BN","Brunei Darussalam",423196,5770,37211.4174047014,167876.4375,90,"Brunei Darussalam","BN",96,"ISO 3166-2:BN","Asia","South-eastern Asia","",142,35,NA
+"37","BTN","2016","BT","Bhutan",797765,38394,186369.331820774,16339.353515625,41.7726445321672,"Bhutan","BT",64,"ISO 3166-2:BT","Asia","Southern Asia","",142,34,NA
+"38","BVT",NA,NA,NA,NA,NA,NA,NA,NA,"Bouvet Island","BV",74,"ISO 3166-2:BV","Americas","Latin America and the Caribbean","South America",19,419,5
+"39","BWA","2016","BW","Botswana",2250260,581730,75408.1455448482,38022.83984375,39.36299738,"Botswana","BW",72,"ISO 3166-2:BW","Africa","Sub-Saharan Africa","Southern Africa",2,202,18
+"40","CAF","2016","CF","Central African Republic",4594621,622980,226655.546518418,1662.55798339844,4,"Central African Republic","CF",140,"ISO 3166-2:CF","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"41","CAN","2016","CA","Canada",36264604,9984670,56129.2769114479,83949.984375,89.84,"Canada","CA",124,"ISO 3166-2:CA","Americas","Northern America","",19,21,NA
+"42","CCK",NA,NA,NA,NA,NA,NA,NA,NA,"Cocos (Keeling) Islands","CC",166,"ISO 3166-2:CC","Oceania","Australia and New Zealand","",9,53,NA
+"43","CEB","2016","B8","Central Europe and the Baltics",102991323,1134871,NA,56221.1488581488,71.3504111076453,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"44","CHE","2016","CH","Switzerland",8372413,41290,78708.2349735972,97439.375,89.1346877351392,"Switzerland","CH",756,"ISO 3166-2:CH","Europe","Western Europe","",150,155,NA
+"45","CHI","2016","JG","Channel Islands",164541,190,NA,74873.0859375,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"46","CHL","2016","CL","Chile",17909754,756096,9337227.49805123,48603.109375,66.01,"Chile","CL",152,"ISO 3166-2:CL","Americas","Latin America and the Caribbean","South America",19,419,5
+"47","CHN","2016","CN","China",1378665000,9562911,53974.4753076346,27152.833984375,53.2,"China","CN",156,"ISO 3166-2:CN","Asia","Eastern Asia","",142,30,NA
+"48","CIV","2016","CI","Cote d'Ivoire",23695919,322460,909932.423384803,10922.505859375,26.5272256146313,"Côte d'Ivoire","CI",384,"ISO 3166-2:CI","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"49","CMR","2016","CM","Cameroon",23439189,475440,815086.904243999,7194.68017578125,25,"Cameroon","CM",120,"ISO 3166-2:CM","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"50","COD","2016","CD","Congo, Dem. Rep.",78736153,2344860,481814.481358964,1992.01403808594,6.20997406030119,"Congo (Democratic Republic of the)","CD",180,"ISO 3166-2:CD","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"51","COG","2016","CG","Congo, Rep.",5125821,342000,906261.650572659,13573.5498046875,8.121949323466,"Congo","CG",178,"ISO 3166-2:CG","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"52","COK",NA,NA,NA,NA,NA,NA,NA,NA,"Cook Islands","CK",184,"ISO 3166-2:CK","Oceania","Polynesia","",9,61,NA
+"53","COL","2016","CO","Colombia",48653419,1141749,17731025.2338073,26399.53125,58.1364935728703,"Colombia","CO",170,"ISO 3166-2:CO","Americas","Latin America and the Caribbean","South America",19,419,5
+"54","COM","2016","KM","Comoros",795601,1861,344721.828152554,5873.662109375,7.938322770803,"Comoros","KM",174,"ISO 3166-2:KM","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"55","CPV","2016","CV","Cabo Verde",539560,4030,298839.969117516,16277.8173828125,50.3228178676892,"Cabo Verde","CV",132,"ISO 3166-2:CV","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"56","CRI","2016","CR","Costa Rica",4857274,51100,6441346.26490085,36416.609375,66.028712851114,"Costa Rica","CR",188,"ISO 3166-2:CR","Americas","Latin America and the Caribbean","Central America",19,419,13
+"57","CSS","2016","S3","Caribbean small states",7245472,434990,NA,31475.1788009453,53.8099889235788,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"58","CUB","2016","CU","Cuba",11475982,109880,NA,NA,38.76586728,"Cuba","CU",192,"ISO 3166-2:CU","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"59","CUW","2016","CW","Curacao",159663,444,NA,NA,61.855510740634,"Curaçao","CW",531,"ISO 3166-2:CW","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"60","CXR",NA,NA,NA,NA,NA,NA,NA,NA,"Christmas Island","CX",162,"ISO 3166-2:CX","Oceania","Australia and New Zealand","",9,53,NA
+"61","CYM","2016","KY","Cayman Islands",60765,264,NA,NA,79,"Cayman Islands","KY",136,"ISO 3166-2:KY","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"62","CYP","2016","CY","Cyprus",1170125,9250,21281.5053765966,50444.5390625,75.9003601905124,"Cyprus","CY",196,"ISO 3166-2:CY","Asia","Western Asia","",142,145,NA
+"63","CZE","2016","CZ","Czech Republic",10566332,78870,451740.490455912,64306.52734375,76.4812013779572,"Czechia","CZ",203,"ISO 3166-2:CZ","Europe","Eastern Europe","",150,151,NA
+"64","DEU","2016","DE","Germany",82487842,357380,38115.3140119728,89240.1796875,89.6471005903368,"Germany","DE",276,"ISO 3166-2:DE","Europe","Western Europe","",150,155,NA
+"65","DJI","2016","DJ","Djibouti",942333,23200,NA,8635.583984375,13.1349151074,"Djibouti","DJ",262,"ISO 3166-2:DJ","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"66","DMA","2016","DM","Dominica",73543,750,21348.148511755,NA,67.03,"Dominica","DM",212,"ISO 3166-2:DM","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"67","DNK","2016","DK","Denmark",5728010,42922,360677.09378999,89898.0546875,96.9677852516645,"Denmark","DK",208,"ISO 3166-2:DK","Europe","Northern Europe","",150,154,NA
+"68","DOM","2016","DO","Dominican Republic",10648791,48670,309746.616080642,32252.625,61.3281904077621,"Dominican Republic","DO",214,"ISO 3166-2:DO","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"69","DZA","2016","DZ","Algeria",40606052,2381740,428675.661450663,51985.9609375,42.9455268800332,"Algeria","DZ",12,"ISO 3166-2:DZ","Africa","Northern Africa","",2,15,NA
+"70","EAP","2016","4E","East Asia & Pacific (excluding high income)",2053299126,16270419,NA,24967.3167342346,48.4161275154768,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"71","EAR","2016","V2","Early-demographic dividend",3170657660,34105563,NA,22040.7080131035,33.5956870150755,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"72","EAS","2016","Z4","East Asia & Pacific",2298727229,24825215.3,NA,30576.2215411975,52.932045318795,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"73","ECA","2016","7E","Europe & Central Asia (excluding high income)",417406606,23541074,NA,42641.0463951473,62.4549863335259,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"74","ECS","2016","Z7","Europe & Central Asia",911847278,28461114,NA,65723.1127627411,73.3545237279398,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"75","ECU","2016","EC","Ecuador",16385068,256370,6018.52686848782,21912.478515625,54.0629247288864,"Ecuador","EC",218,"ISO 3166-2:EC","Americas","Latin America and the Caribbean","South America",19,419,5
+"76","EGY","2016","EG","Egypt, Arab Rep.",95688681,1001450,28303.2430972687,38678.46484375,41.2480670885772,"Egypt","EG",818,"ISO 3166-2:EG","Africa","Northern Africa","",2,15,NA
+"77","EMU","2016","XC","Euro area",340762347,2759052,NA,88725.1039673578,80.5799712009104,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"78","ERI",NA,NA,NA,NA,117600,NA,3829.19409179688,1.177118720157,"Eritrea","ER",232,"ISO 3166-2:ER","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"79","ESH",NA,NA,NA,NA,NA,NA,NA,NA,"Western Sahara","EH",732,"ISO 3166-2:EH","Africa","Northern Africa","",2,15,NA
+"80","ESP","2016","ES","Spain",46484533,505940,24062.2402294544,83606.1796875,80.5613329432179,"Spain","ES",724,"ISO 3166-2:ES","Europe","Southern Europe","",150,39,NA
+"81","EST","2016","EE","Estonia",1315790,45230,16034.6926941229,56516.75,87.2373320920335,"Estonia","EE",233,"ISO 3166-2:EE","Europe","Northern Europe","",150,154,NA
+"82","ETH","2016","ET","Ethiopia",102403196,1104300,14921.8412480017,3536.791015625,15.3669238595896,"Ethiopia","ET",231,"ISO 3166-2:ET","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"83","EUU","2016","EU","European Union",511360932,4383564,NA,81757.8840967212,80.9424276584966,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"84","FCS","2016","F1","Fragile and conflict affected situations",505635987,15752115.5,NA,10746.7516138934,17.3110831915358,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"85","FIN","2016","FI","Finland",5495303,338420,39264.9868442195,88001.953125,87.7036499599455,"Finland","FI",246,"ISO 3166-2:FI","Europe","Northern Europe","",150,154,NA
+"86","FJI","2016","FJ","Fiji",898760,18270,10962.5484000178,22043.283203125,46.5069783122217,"Fiji","FJ",242,"ISO 3166-2:FJ","Oceania","Melanesia","",9,54,NA
+"87","FLK",NA,NA,NA,NA,NA,NA,NA,NA,"Falkland Islands (Malvinas)","FK",238,"ISO 3166-2:FK","Americas","Latin America and the Caribbean","South America",19,419,5
+"88","FRA","2016","FR","France",66892205,549087,33320.1304995104,92581.609375,85.6221999507862,"France","FR",250,"ISO 3166-2:FR","Europe","Western Europe","",150,155,NA
+"89","FRO","2016","FO","Faroe Islands",49117,1396,NA,NA,95.1086816720257,"Faroe Islands","FO",234,"ISO 3166-2:FO","Europe","Northern Europe","",150,154,NA
+"90","FSM","2016","FM","Micronesia, Fed. Sts.",104937,700,3143.74910660682,NA,33.352162552269,"Micronesia (Federated States of)","FM",583,"ISO 3166-2:FM","Oceania","Micronesia","",9,57,NA
+"91","GAB","2016","GA","Gabon",1979786,267670,4257417.21580009,61236.78125,48.0522737506185,"Gabon","GA",266,"ISO 3166-2:GA","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"92","GBR","2016","GB","United Kingdom",65595565,243610,29930.5448470487,79330.5234375,94.7758006318882,"United Kingdom of Great Britain and Northern Ireland","GB",826,"ISO 3166-2:GB","Europe","Northern Europe","",150,154,NA
+"93","GEO","2016","GE","Georgia",3719300,69700,9149.15500037636,18675.34765625,58.0061615743028,"Georgia","GE",268,"ISO 3166-2:GE","Asia","Western Asia","",142,145,NA
+"94","GGY",NA,NA,NA,NA,NA,NA,NA,NA,"Guernsey","GG",831,"ISO 3166-2:GG","Europe","Northern Europe","Channel Islands",150,154,830
+"95","GHA","2016","GH","Ghana",28206728,238540,5982.71146869641,8783.4736328125,34.66600065,"Ghana","GH",288,"ISO 3166-2:GH","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"96","GIB","2016","GI","Gibraltar",34408,10,NA,NA,94.4444715818151,"Gibraltar","GI",292,"ISO 3166-2:GI","Europe","Southern Europe","",150,39,NA
+"97","GIN","2016","GN","Guinea",12395924,245860,6126474.86228438,3424.11596679688,9.8,"Guinea","GN",324,"ISO 3166-2:GN","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"98","GLP",NA,NA,NA,NA,NA,NA,NA,NA,"Guadeloupe","GP",312,"ISO 3166-2:GP","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"99","GMB","2016","GM","Gambia, The",2038501,11300,20726.924097658,5219.4169921875,18.5,"Gambia","GM",270,"ISO 3166-2:GM","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"100","GNB","2016","GW","Guinea-Bissau",1815698,36130,380279.061055308,3712.15698242188,3.761413832337,"Guinea-Bissau","GW",624,"ISO 3166-2:GW","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"101","GNQ","2016","GQ","Equatorial Guinea",1221490,28050,5183919.68376638,61825.53125,23.779999971074,"Equatorial Guinea","GQ",226,"ISO 3166-2:GQ","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"102","GRC","2016","GR","Greece",10770521,131960,16173.7082078016,66743.734375,69.0879154723892,"Greece","GR",300,"ISO 3166-2:GR","Europe","Southern Europe","",150,39,NA
+"103","GRD","2016","GD","Grenada",107317,340,26572.7629359747,NA,55.8564078225865,"Grenada","GD",308,"ISO 3166-2:GD","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"104","GRL","2016","GL","Greenland",56186,410450,NA,NA,68.500873675421,"Greenland","GL",304,"ISO 3166-2:GL","Americas","Northern America","",19,21,NA
+"105","GTM","2016","GT","Guatemala",16582469,108890,31514.8407031546,18702.37109375,34.5093260915602,"Guatemala","GT",320,"ISO 3166-2:GT","Americas","Latin America and the Caribbean","Central America",19,419,13
+"106","GUF",NA,NA,NA,NA,NA,NA,NA,NA,"French Guiana","GF",254,"ISO 3166-2:GF","Americas","Latin America and the Caribbean","South America",19,419,5
+"107","GUM","2016","GU","Guam",162896,540,35562.5675277478,73106.6875,77.009999893206,"Guam","GU",316,"ISO 3166-2:GU","Oceania","Micronesia","",9,57,NA
+"108","GUY","2016","GY","Guyana",773303,214970,935267.288501402,20192.689453125,35.66,"Guyana","GY",328,"ISO 3166-2:GY","Americas","Latin America and the Caribbean","South America",19,419,5
+"109","HIC","2016","XD","High income",1189954263,36850659.7,NA,90551.970339999,82.1818476025566,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"110","HKG","2016","HK","Hong Kong SAR, China",7336600,1105,339530.709047788,106209.8984375,87.477846264841,"Hong Kong","HK",344,"ISO 3166-2:HK","Asia","Eastern Asia","",142,30,NA
+"111","HMD",NA,NA,NA,NA,NA,NA,NA,NA,"Heard Island and McDonald Islands","HM",334,"ISO 3166-2:HM","Oceania","Australia and New Zealand","",9,53,NA
+"112","HND","2016","HN","Honduras",9112867,112490,53917.0932704274,9841.0244140625,30,"Honduras","HN",340,"ISO 3166-2:HN","Americas","Latin America and the Caribbean","Central America",19,419,13
+"113","HPC","2016","XE","Heavily indebted poor countries (HIPC)",744602976,19767153.5,NA,5425.74086165304,15.5688414396669,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"114","HRV","2016","HR","Croatia",4174349,56590,82687.3843083077,54597.83203125,72.6973060458944,"Croatia","HR",191,"ISO 3166-2:HR","Europe","Southern Europe","",150,39,NA
+"115","HTI","2016","HT","Haiti",10847334,27750,44651.6167013941,4204.0048828125,12.2326016070408,"Haiti","HT",332,"ISO 3166-2:HT","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"116","HUN","2016","HU","Hungary",9814023,93030,3609153.9626512,57453.41015625,79.2594013161699,"Hungary","HU",348,"ISO 3166-2:HU","Europe","Eastern Europe","",150,151,NA
+"117","IBD","2016","XF","IBRD only",4699229277,71363207,NA,27415.1690618428,45.8760027275011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"118","IBT","2016","ZT","IDA & IBRD total",6273581970,98489576.5,NA,23267.1768359338,39.1761902297296,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"119","IDA","2016","XG","IDA total",1574352693,27126369.5,NA,8686.99094909772,19.0625292791361,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"120","IDB","2016","XH","IDA blend",521159047,6037650,NA,13957.6188238907,23.063194607018,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"121","IDN","2016","ID","Indonesia",261115456,1910931,47514651.143439,23787.86328125,25.3663005863964,"Indonesia","ID",360,"ISO 3166-2:ID","Asia","South-eastern Asia","",142,35,NA
+"122","IDX","2016","XI","IDA only",1053193646,21088719.5,NA,6427.16462180605,17.0787938247833,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"123","IMN","2016","IM","Isle of Man",83737,570,NA,NA,NA,"Isle of Man","IM",833,"ISO 3166-2:IM","Europe","Northern Europe","",150,154,NA
+"124","IND","2016","IN","India",1324171354,3287259,114665.741753994,16774.15625,29.5471628858754,"India","IN",356,"ISO 3166-2:IN","Asia","Southern Asia","",142,34,NA
+"125","IOT",NA,NA,NA,NA,NA,NA,NA,NA,"British Indian Ocean Territory","IO",86,"ISO 3166-2:IO","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"126","IRL","2016","IE","Ireland",4749777,70280,58016.8500542236,152196.84375,85.0111321151019,"Ireland","IE",372,"ISO 3166-2:IE","Europe","Northern Europe","",150,154,NA
+"127","IRN","2016","IR","Iran, Islamic Rep.",80277428,1745150,163822625.209168,61309.96875,53.2267726333568,"Iran (Islamic Republic of)","IR",364,"ISO 3166-2:IR","Asia","Southern Asia","",142,34,NA
+"128","IRQ","2016","IQ","Iraq",37202572,435050,5448548.01974444,63948.703125,21.23,"Iraq","IQ",368,"ISO 3166-2:IQ","Asia","Western Asia","",142,145,NA
+"129","ISL","2016","IS","Iceland",335439,103000,7312714.15577795,78451.8359375,98.2400162999185,"Iceland","IS",352,"ISO 3166-2:IS","Europe","Northern Europe","",150,154,NA
+"130","ISR","2016","IL","Israel",8546000,22070,142795.532424526,76869.125,79.6531241815281,"Israel","IL",376,"ISO 3166-2:IL","Asia","Western Asia","",142,145,NA
+"131","ITA","2016","IT","Italy",60627498,301340,27725.8365502729,93487.6796875,61.3242527666303,"Italy","IT",380,"ISO 3166-2:IT","Europe","Southern Europe","",150,39,NA
+"132","JAM","2016","JM","Jamaica",2881355,10990,610285.43862176,18016.056640625,45,"Jamaica","JM",388,"ISO 3166-2:JM","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"133","JEY",NA,NA,NA,NA,NA,NA,NA,NA,"Jersey","JE",832,"ISO 3166-2:JE","Europe","Northern Europe","Channel Islands",150,154,830
+"134","JOR","2016","JO","Jordan",9455802,89320,2902.43563687142,38279.78125,62.3021925670712,"Jordan","JO",400,"ISO 3166-2:JO","Asia","Western Asia","",142,145,NA
+"135","JPN","2016","JP","Japan",126994511,377962,4239913.95974587,74426.71875,93.1827212821617,"Japan","JP",392,"ISO 3166-2:JP","Asia","Eastern Asia","",142,30,NA
+"136","KAZ","2016","KZ","Kazakhstan",17794397,2724902,2639659.55126212,47317.15234375,74.5877264735738,"Kazakhstan","KZ",398,"ISO 3166-2:KZ","Asia","Central Asia","",142,143,NA
+"137","KEN","2016","KE","Kenya",48461567,580370,147719.016184516,8521.4619140625,26,"Kenya","KE",404,"ISO 3166-2:KE","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"138","KGZ","2016","KG","Kyrgyz Republic",6079500,199949,75339.6496422403,8564.734375,34.5,"Kyrgyzstan","KG",417,"ISO 3166-2:KG","Asia","Central Asia","",142,143,NA
+"139","KHM","2016","KH","Cambodia",15762370,181040,5154165.65014018,6176.76513671875,32.3984517141849,"Cambodia","KH",116,"ISO 3166-2:KH","Asia","South-eastern Asia","",142,35,NA
+"140","KIR","2016","KI","Kiribati",114395,810,2134.91024503795,NA,13.7,"Kiribati","KI",296,"ISO 3166-2:KI","Oceania","Micronesia","",9,57,NA
+"141","KNA","2016","KN","St. Kitts and Nevis",54821,260,44811.4312526222,NA,76.8176749076294,"Saint Kitts and Nevis","KN",659,"ISO 3166-2:KN","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"142","KOR","2016","KR","Korea, Rep.",51245707,100280,31952350.6622711,67955.890625,92.8430256796075,"Korea (Republic of)","KR",410,"ISO 3166-2:KR","Asia","Eastern Asia","",142,30,NA
+"143","KWT","2016","KW","Kuwait",4052584,17820,8267.95940565328,120438.2890625,78.36738376,"Kuwait","KW",414,"ISO 3166-2:KW","Asia","Western Asia","",142,145,NA
+"144","LAC","2016","XJ","Latin America & Caribbean (excluding high income)",610136397,19461731,NA,30576.8612722001,56.3000379877624,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"145","LAO","2016","LA","Lao PDR",6758353,236800,19128790.6218719,10973.1826171875,21.87,"Lao People's Democratic Republic","LA",418,"ISO 3166-2:LA","Asia","South-eastern Asia","",142,35,NA
+"146","LBN","2016","LB","Lebanon",6006668,10450,12447871.2937189,38047.7265625,76.11,"Lebanon","LB",422,"ISO 3166-2:LB","Asia","Western Asia","",142,145,NA
+"147","LBR","2016","LR","Liberia",4613823,111370,455.370741357005,2498.34497070313,7.31910641139578,"Liberia","LR",430,"ISO 3166-2:LR","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"148","LBY","2016","LY","Libya",6293253,1759540,NA,44887.94921875,20.27215956269,"Libya","LY",434,"ISO 3166-2:LY","Africa","Northern Africa","",2,15,NA
+"149","LCA","2016","LC","St. Lucia",178015,620,25285.0181164509,24055.5703125,46.7290780591803,"Saint Lucia","LC",662,"ISO 3166-2:LC","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"150","LCN","2016","ZJ","Latin America & Caribbean",637668677,20425483.4,NA,31356.3570912593,56.8413099116692,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"151","LDC","2016","XL","Least developed countries: UN classification",979387925,20789297.5,NA,6314.05737766281,15.6120419673011,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"152","LIC","2016","XM","Low income",659272676,14471486,NA,3826.18933094256,12.4397539372625,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"153","LIE","2016","LI","Liechtenstein",37666,160,NA,NA,98.0939038921672,"Liechtenstein","LI",438,"ISO 3166-2:LI","Europe","Western Europe","",150,155,NA
+"154","LKA","2016","LK","Sri Lanka",21203000,65610,558363.297646559,30409.216796875,32.0510027436177,"Sri Lanka","LK",144,"ISO 3166-2:LK","Asia","Southern Asia","",142,34,NA
+"155","LMC","2016","XN","Lower middle income",3014788232,23351530.5,NA,16771.3903940387,29.9756057429363,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"156","LMY","2016","XO","Low & middle income",6254072964,97474470.5,NA,22831.0657443366,38.8830435555294,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"157","LSO","2016","LS","Lesotho",2203821,30360,15293.6310163121,9218.16015625,27.36,"Lesotho","LS",426,"ISO 3166-2:LS","Africa","Sub-Saharan Africa","Southern Africa",2,202,18
+"158","LTE","2016","V3","Late-demographic dividend",2264565982,45769159,NA,30086.5752207954,56.4925298930585,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"159","LTU","2016","LT","Lithuania",2868231,65286,13481.5924867976,58424.484375,74.3766455618662,"Lithuania","LT",440,"ISO 3166-2:LT","Europe","Northern Europe","",150,154,NA
+"160","LUX","2016","LU","Luxembourg",582014,2590,91071.30928122,215443.875,98.1366986657616,"Luxembourg","LU",442,"ISO 3166-2:LU","Europe","Western Europe","",150,155,NA
+"161","LVA","2016","LV","Latvia",1959537,64490,12720.7029007362,52500.7265625,79.8420977843089,"Latvia","LV",428,"ISO 3166-2:LV","Europe","Northern Europe","",150,154,NA
+"162","MAC","2016","MO","Macao SAR, China",612167,30.3,591774.793479557,93007.03125,81.6429854646415,"Macao","MO",446,"ISO 3166-2:MO","Asia","Eastern Asia","",142,30,NA
+"163","MAF","2016","MF","St. Martin (French part)",31949,54.4,NA,NA,NA,"Saint Martin (French part)","MF",663,"ISO 3166-2:MF","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"164","MAR","2016","MA","Morocco",35276786,446550,28370.8963100683,23104.560546875,58.271236420398,"Morocco","MA",504,"ISO 3166-2:MA","Africa","Northern Africa","",2,15,NA
+"165","MCO","2016","MC","Monaco",38499,2,NA,NA,95.2081779700534,"Monaco","MC",492,"ISO 3166-2:MC","Europe","Western Europe","",150,155,NA
+"166","MDA","2016","MD","Moldova",3551954,33850,37859.7245347209,12989.6435546875,70.9999991066624,"Moldova (Republic of)","MD",498,"ISO 3166-2:MD","Europe","Eastern Europe","",150,151,NA
+"167","MDG","2016","MG","Madagascar",24894551,587295,1276150.05438425,2758.55004882813,4.713662899498,"Madagascar","MG",450,"ISO 3166-2:MG","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"168","MDV","2016","MV","Maldives",427756,300,151767.228992214,24881.541015625,59.0925899654109,"Maldives","MV",462,"ISO 3166-2:MV","Asia","Southern Asia","",142,34,NA
+"169","MEA","2016","ZQ","Middle East & North Africa",436720093,11370611,NA,55423.5810291349,48.1778971058193,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"170","MEX","2016","MX","Mexico",127540423,1964380,153205.309747169,38390.2578125,59.5404459967255,"Mexico","MX",484,"ISO 3166-2:MX","Americas","Latin America and the Caribbean","Central America",19,419,13
+"171","MHL","2016","MH","Marshall Islands",53066,180,3665.20747748087,NA,29.7877793626081,"Marshall Islands","MH",584,"ISO 3166-2:MH","Oceania","Micronesia","",9,57,NA
+"172","MIC","2016","XP","Middle income",5594800288,83002984.5,NA,25009.3203622544,41.8685729520718,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"173","MKD","2016","MK","Macedonia, FYR",2081206,25710,291875.142825842,38412.1640625,72.1568144676058,"Macedonia (the former Yugoslav Republic of)","MK",807,"ISO 3166-2:MK","Europe","Southern Europe","",150,39,NA
+"174","MLI","2016","ML","Mali",17994837,1240190,462513.687937268,7396.12890625,11.1121864890589,"Mali","ML",466,"ISO 3166-2:ML","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"175","MLT","2016","MT","Malta",437418,320,22731.4354065696,84915.4765625,77.2893948185413,"Malta","MT",470,"ISO 3166-2:MT","Europe","Southern Europe","",150,39,NA
+"176","MMR","2016","MM","Myanmar",52885223,676590,1507432.38616957,11757.90625,25.07330424,"Myanmar","MM",104,"ISO 3166-2:MM","Asia","South-eastern Asia","",142,35,NA
+"177","MNA","2016","XQ","Middle East & North Africa (excluding high income)",373719055,8775230,NA,42953.3673250964,43.1049810139874,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"178","MNE","2016","ME","Montenegro",622303,13810,6354.15705853901,46587.40625,69.8816468416779,"Montenegro","ME",499,"ISO 3166-2:ME","Europe","Southern Europe","",150,39,NA
+"179","MNG","2016","MN","Mongolia",3027398,1564120,7906411.27063571,28924.818359375,22.2657705007562,"Mongolia","MN",496,"ISO 3166-2:MN","Asia","Eastern Asia","",142,30,NA
+"180","MNP","2016","MP","Northern Mariana Islands",55023,460,22572.3788234011,NA,NA,"Northern Mariana Islands","MP",580,"ISO 3166-2:MP","Oceania","Micronesia","",9,57,NA
+"181","MOZ","2016","MZ","Mozambique",28829476,799380,23906.5364879291,3428.3310546875,17.5212390868424,"Mozambique","MZ",508,"ISO 3166-2:MZ","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"182","MRT","2016","MR","Mauritania",4301018,1030700,387347.401768605,13950.5654296875,18,"Mauritania","MR",478,"ISO 3166-2:MR","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"183","MSR",NA,NA,NA,NA,NA,NA,NA,NA,"Montserrat","MS",500,"ISO 3166-2:MS","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"184","MTQ",NA,NA,NA,NA,NA,NA,NA,NA,"Martinique","MQ",474,"ISO 3166-2:MQ","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"185","MUS","2016","MU","Mauritius",1263473,2040,343765.953051628,43761.15234375,52.1913259356523,"Mauritius","MU",480,"ISO 3166-2:MU","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"186","MWI","2016","MW","Malawi",18091575,118480,215622.465152979,2645.84301757813,9.61409729617623,"Malawi","MW",454,"ISO 3166-2:MW","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"187","MYS","2016","MY","Malaysia",31187265,330800,39443.0226568441,55527.5859375,78.7883099275229,"Malaysia","MY",458,"ISO 3166-2:MY","Asia","South-eastern Asia","",142,35,NA
+"188","MYT",NA,NA,NA,NA,NA,NA,NA,NA,"Mayotte","YT",175,"ISO 3166-2:YT","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"189","NAC","2016","XU","North America",359457493,19816230,NA,108150.359609172,77.5634594899712,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"190","NAM","2016","NA","Namibia",2479713,824290,64939.042340787,32181.833984375,31.0333459383454,"Namibia",NA,516,"ISO 3166-2:NA","Africa","Sub-Saharan Africa","Southern Africa",2,202,18
+"191","NCL","2016","NC","New Caledonia",277000,18580,NA,84039.5703125,NA,"New Caledonia","NC",540,"ISO 3166-2:NC","Oceania","Melanesia","",9,54,NA
+"192","NER","2016","NE","Niger",20672987,1267000,215950.11886768,2318.77587890625,4.32275803028068,"Niger","NE",562,"ISO 3166-2:NE","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"193","NFK",NA,NA,NA,NA,NA,NA,NA,NA,"Norfolk Island","NF",574,"ISO 3166-2:NF","Oceania","Australia and New Zealand","",9,53,NA
+"194","NGA","2016","NG","Nigeria",185989640,923770,551511.46071679,18259.826171875,25.67,"Nigeria","NG",566,"ISO 3166-2:NG","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"195","NIC","2016","NI","Nicaragua",6149928,130370,61571.6936198277,11544.099609375,24.5718339595365,"Nicaragua","NI",558,"ISO 3166-2:NI","Americas","Latin America and the Caribbean","Central America",19,419,13
+"196","NIU",NA,NA,NA,NA,NA,NA,NA,NA,"Niue","NU",570,"ISO 3166-2:NU","Oceania","Polynesia","",9,61,NA
+"197","NLD","2016","NL","Netherlands",17030314,41540,41258.2527838301,94977.53125,90.4109589041096,"Netherlands","NL",528,"ISO 3166-2:NL","Europe","Western Europe","",150,155,NA
+"198","NOR","2016","NO","Norway",5236151,385178,595290.701127603,126665.796875,97.2982036675068,"Norway","NO",578,"ISO 3166-2:NO","Europe","Northern Europe","",150,154,NA
+"199","NPL","2016","NP","Nepal",28982771,147180,77543.5367791437,4133.5732421875,19.688763836629,"Nepal","NP",524,"ISO 3166-2:NP","Asia","Southern Asia","",142,34,NA
+"200","NRU","2016","NR","Nauru",13049,20,10744.1183232432,NA,NA,"Nauru","NR",520,"ISO 3166-2:NR","Oceania","Micronesia","",9,57,NA
+"201","NZL","2016","NZ","New Zealand",4693200,267710,56617.0203698969,66063.8359375,88.470186347099,"New Zealand","NZ",554,"ISO 3166-2:NZ","Oceania","Australia and New Zealand","",9,53,NA
+"202","OED","2016","OE","OECD members",1289872625,36263444,NA,84128.9064624947,78.7311322213994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"203","OMN","2016","OM","Oman",4424762,309500,5760.71662159456,78584.8203125,69.9291925745236,"Oman","OM",512,"ISO 3166-2:OM","Asia","Western Asia","",142,145,NA
+"204","OSS","2016","S4","Other small states",29994562,2072826,NA,57353.6747070033,45.7299346232056,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"205","PAK","2016","PK","Pakistan",193203476,796100,150632.020719958,14066.427734375,15.5145577897414,"Pakistan","PK",586,"ISO 3166-2:PK","Asia","Southern Asia","",142,34,NA
+"206","PAN","2016","PA","Panama",4034119,75420,13680.23600692,47142.765625,54,"Panama","PA",591,"ISO 3166-2:PA","Americas","Latin America and the Caribbean","Central America",19,419,13
+"207","PCN",NA,NA,NA,NA,NA,NA,NA,NA,"Pitcairn","PN",612,"ISO 3166-2:PN","Oceania","Polynesia","",9,61,NA
+"208","PER","2016","PE","Peru",31773839,1285220,20416.7648737693,22180.87890625,45.4617406869459,"Peru","PE",604,"ISO 3166-2:PE","Americas","Latin America and the Caribbean","South America",19,419,5
+"209","PHL","2016","PH","Philippines",103320222,3e+05,140153.783589431,18617.958984375,55.5,"Philippines","PH",608,"ISO 3166-2:PH","Asia","South-eastern Asia","",142,35,NA
+"210","PLW","2016","PW","Palau",21503,460,14428.1402594987,NA,NA,"Palau","PW",585,"ISO 3166-2:PW","Oceania","Micronesia","",9,57,NA
+"211","PNG","2016","PG","Papua New Guinea",8084991,462840,7832.78546630417,7043.9970703125,9.60153846153846,"Papua New Guinea","PG",598,"ISO 3166-2:PG","Oceania","Melanesia","",9,54,NA
+"212","POL","2016","PL","Poland",37970087,312680,48950.0326928405,56875.38671875,73.3007,"Poland","PL",616,"ISO 3166-2:PL","Europe","Eastern Europe","",150,151,NA
+"213","PRE","2016","V1","Pre-demographic dividend",879292453,20685993.5,NA,10041.9411340536,17.1976297828928,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"214","PRI","2016","PR","Puerto Rico",3411307,8870,30790.1047897477,57089.02734375,80.32,"Puerto Rico","PR",630,"ISO 3166-2:PR","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"215","PRK","2016","KP","Korea, Dem. People’s Rep.",25368620,120540,NA,2752.02587890625,NA,"Korea (Democratic People's Republic of)","KP",408,"ISO 3166-2:KP","Asia","Eastern Asia","",142,30,NA
+"216","PRT","2016","PT","Portugal",10325452,92225,17964.7320039839,58973.3203125,70.423567088723,"Portugal","PT",620,"ISO 3166-2:PT","Europe","Southern Europe","",150,39,NA
+"217","PRY","2016","PY","Paraguay",6725308,406752,23123003.1941065,19002.1015625,51.3498743564467,"Paraguay","PY",600,"ISO 3166-2:PY","Americas","Latin America and the Caribbean","South America",19,419,5
+"218","PSE","2016","PS","West Bank and Gaza",4551566,6020,2943.4045337363,11178.53515625,61.17838482746,"Palestine, State of","PS",275,"ISO 3166-2:PS","Asia","Western Asia","",142,145,NA
+"219","PSS","2016","S2","Pacific island small states",2388875,65150,NA,13582.3488028794,30.6072134708858,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"220","PST","2016","V4","Post-demographic dividend",1102651400,33298993.3,NA,87887.6103292096,81.1277965353923,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"221","PYF","2016","PF","French Polynesia",280208,4000,NA,103455.921875,68.440419493378,"French Polynesia","PF",258,"ISO 3166-2:PF","Oceania","Polynesia","",9,61,NA
+"222","QAT","2016","QA","Qatar",2569804,11610,215940.593134729,152831.1875,94.2911181549896,"Qatar","QA",634,"ISO 3166-2:QA","Asia","Western Asia","",142,145,NA
+"223","REU",NA,NA,NA,NA,NA,NA,NA,NA,"Réunion","RE",638,"ISO 3166-2:RE","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"224","ROU","2016","RO","Romania",19699312,238390,38654.8322093685,50308.0078125,59.5039512852713,"Romania","RO",642,"ISO 3166-2:RO","Europe","Eastern Europe","",150,151,NA
+"225","RUS","2016","RU","Russian Federation",144342396,17098250,586629.74695929,49551.98046875,73.091434617897,"Russian Federation","RU",643,"ISO 3166-2:RU","Europe","Eastern Europe","",150,151,NA
+"226","RWA","2016","RW","Rwanda",11917508,26340,555317.437168911,3514.35888671875,20,"Rwanda","RW",646,"ISO 3166-2:RW","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"227","SAS","2016","8S","South Asia",1766393714,5135333,NA,15511.7862336943,26.4777357008626,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"228","SAU","2016","SA","Saudi Arabia",32275687,2149690,75107.4307759894,120484.015625,73.7509036835003,"Saudi Arabia","SA",682,"ISO 3166-2:SA","Asia","Western Asia","",142,145,NA
+"229","SDN","2016","SD","Sudan",39578828,1879357.5,14997.3869868001,17065.03515625,28,"Sudan","SD",729,"ISO 3166-2:SD","Africa","Northern Africa","",2,15,NA
+"230","SEN","2016","SN","Senegal",15411614,196710,565001.143429883,7760.60107421875,25.6647680413953,"Senegal","SN",686,"ISO 3166-2:SN","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"231","SGP","2016","SG","Singapore",5607283,719,73167.6821020091,141424.578125,81,"Singapore","SG",702,"ISO 3166-2:SG","Asia","South-eastern Asia","",142,35,NA
+"232","SGS",NA,NA,NA,NA,NA,NA,NA,NA,"South Georgia and the South Sandwich Islands","GS",239,"ISO 3166-2:GS","Americas","Latin America and the Caribbean","South America",19,419,5
+"233","SHN",NA,NA,NA,NA,NA,NA,NA,NA,"Saint Helena, Ascension and Tristan da Cunha","SH",654,"ISO 3166-2:SH","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"234","SJM",NA,NA,NA,NA,NA,NA,NA,NA,"Svalbard and Jan Mayen","SJ",744,"ISO 3166-2:SJ","Europe","Northern Europe","",150,154,NA
+"235","SLB","2016","SB","Solomon Islands",599419,28900,16043.8691466236,3983.94091796875,11.000902271205,"Solomon Islands","SB",90,"ISO 3166-2:SB","Oceania","Melanesia","",9,54,NA
+"236","SLE","2016","SL","Sierra Leone",7396190,72300,3283829.32268717,4256.1669921875,11.77318438,"Sierra Leone","SL",694,"ISO 3166-2:SL","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"237","SLV","2016","SV","El Salvador",6344722,21040,4223.58457943469,18725.59765625,28.997073045597,"El Salvador","SV",222,"ISO 3166-2:SV","Americas","Latin America and the Caribbean","Central America",19,419,13
+"238","SMR","2016","SM","San Marino",33203,60,43309.3395175135,NA,NA,"San Marino","SM",674,"ISO 3166-2:SM","Europe","Southern Europe","",150,39,NA
+"239","SOM","2016","SO","Somalia",14317996,637660,10112288.9683724,2086.9970703125,1.88,"Somalia","SO",706,"ISO 3166-2:SO","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"240","SPM",NA,NA,NA,NA,NA,NA,NA,NA,"Saint Pierre and Miquelon","PM",666,"ISO 3166-2:PM","Americas","Northern America","",19,21,NA
+"241","SRB","2016","RS","Serbia",7058322,88360,603815.949456542,28142.0078125,67.0568413716938,"Serbia","RS",688,"ISO 3166-2:RS","Europe","Southern Europe","",150,39,NA
+"242","SSA","2016","ZF","Sub-Saharan Africa (excluding high income)",1033118066,24290683.5,NA,9267.69347440391,19.9190255987256,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"243","SSD","2016","SS","South Sudan",12230730,644330,NA,3661.61596679688,6.6797280510287,"South Sudan","SS",728,"ISO 3166-2:SS","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"244","SSF","2016","ZG","Sub-Saharan Africa",1033212743,24291143.5,NA,9267.69347440391,19.9223630952602,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"245","SST","2016","S1","Small states",39628909,2572966,NA,50180.8926305824,46.314677492001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"246","STP","2016","ST","Sao Tome and Principe",199910,960,37978212.3620228,11544.5302734375,28,"Sao Tome and Principe","ST",678,"ISO 3166-2:ST","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"247","SUR","2016","SR","Suriname",558368,163820,36570.8636598086,35610.40625,45.4,"Suriname","SR",740,"ISO 3166-2:SR","Americas","Latin America and the Caribbean","South America",19,419,5
+"248","SVK","2016","SK","Slovak Republic",5430798,49035,14943.2856828775,62713.84375,80.4759,"Slovakia","SK",703,"ISO 3166-2:SK","Europe","Eastern Europe","",150,151,NA
+"249","SVN","2016","SI","Slovenia",2065042,20270,19572.5528584891,68412.6796875,75.4985042610791,"Slovenia","SI",705,"ISO 3166-2:SI","Europe","Southern Europe","",150,39,NA
+"250","SWE","2016","SE","Sweden",9923085,447420,443894.413884392,95936.6015625,89.6509476102355,"Sweden","SE",752,"ISO 3166-2:SE","Europe","Northern Europe","",150,154,NA
+"251","SWZ","2016","SZ","Swaziland",1343098,17360,40749.6342783624,30208.943359375,28.5735227827685,"Swaziland","SZ",748,"ISO 3166-2:SZ","Africa","Sub-Saharan Africa","Southern Africa",2,202,18
+"252","SXM","2016","SX","Sint Maarten (Dutch part)",39969,34,NA,NA,NA,"Sint Maarten (Dutch part)","SX",534,"ISO 3166-2:SX","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"253","SYC","2016","SC","Seychelles",94677,460,201027.180826937,NA,56.5147081470678,"Seychelles","SC",690,"ISO 3166-2:SC","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"254","SYR","2016","SY","Syrian Arab Republic",18430453,185180,NA,12901.728515625,31.869627268866,"Syrian Arab Republic","SY",760,"ISO 3166-2:SY","Asia","Western Asia","",142,145,NA
+"255","TCA","2016","TC","Turks and Caicos Islands",34900,950,NA,NA,NA,"Turks and Caicos Islands","TC",796,"ISO 3166-2:TC","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"256","TCD","2016","TD","Chad",14452543,1284000,393932.768800619,5009.28515625,5,"Chad","TD",148,"ISO 3166-2:TD","Africa","Sub-Saharan Africa","Middle Africa",2,202,17
+"257","TEA","2016","T4","East Asia & Pacific (IDA & IBRD countries)",2027896410,16150139,NA,25289.9481811305,48.4161275154768,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"258","TEC","2016","T7","Europe & Central Asia (IDA & IBRD countries)",455376693,23853754,NA,43883.8340796559,63.3745882772361,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"259","TGO","2016","TG","Togo",7606374,56790,343032.527719515,3250.05810546875,11.31,"Togo","TG",768,"ISO 3166-2:TG","Africa","Sub-Saharan Africa","Western Africa",2,202,11
+"260","THA","2016","TH","Thailand",68863514,513120,208623.640669862,28303.396484375,47.5049656215909,"Thailand","TH",764,"ISO 3166-2:TH","Asia","South-eastern Asia","",142,35,NA
+"261","TJK","2016","TJ","Tajikistan",8734951,141376,6235.99376802457,7544.208984375,20.470000000055,"Tajikistan","TJ",762,"ISO 3166-2:TJ","Asia","Central Asia","",142,143,NA
+"262","TKL",NA,NA,NA,NA,NA,NA,NA,NA,"Tokelau","TK",772,"ISO 3166-2:TK","Oceania","Polynesia","",9,61,NA
+"263","TKM","2016","TM","Turkmenistan",5662544,488100,22362.6694997867,36605.76171875,17.990324461341,"Turkmenistan","TM",795,"ISO 3166-2:TM","Asia","Central Asia","",142,143,NA
+"264","TLA","2016","T2","Latin America & the Caribbean (IDA & IBRD countries)",621534921,20289997,NA,31373.4937336958,57.001398725708,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"265","TLS","2016","TL","Timor-Leste",1268671,14870,1405.3872122875,20671.849609375,25.24624959,"Timor-Leste","TL",626,"ISO 3166-2:TL","Asia","South-eastern Asia","",142,35,NA
+"266","TMN","2016","T3","Middle East & North Africa (IDA & IBRD countries)",369167489,8769210,NA,43242.1026756801,42.8704415472246,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"267","TON","2016","TO","Tonga",107122,750,8303.61643733313,12585.2978515625,39.95,"Tonga","TO",776,"ISO 3166-2:TO","Oceania","Polynesia","",9,61,NA
+"268","TSA","2016","T5","South Asia (IDA & IBRD)",1766393714,5135333,NA,15511.7862336943,26.4777357008626,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"269","TSS","2016","T6","Sub-Saharan Africa (IDA & IBRD countries)",1033212743,24291143.5,NA,9267.69347440391,19.9223630952602,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"270","TTO","2016","TT","Trinidad and Tobago",1364962,5130,106897.261608748,64615.52734375,73.296941218486,"Trinidad and Tobago","TT",780,"ISO 3166-2:TT","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"271","TUN","2016","TN","Tunisia",11403248,163610,7923.21241281432,35182.55078125,49.6,"Tunisia","TN",788,"ISO 3166-2:TN","Africa","Northern Africa","",2,15,NA
+"272","TUR","2016","TR","Turkey",79512426,785350,32806.5169210156,68676.2109375,58.3477340145685,"Turkey","TR",792,"ISO 3166-2:TR","Asia","Western Asia","",142,145,NA
+"273","TUV","2016","TV","Tuvalu",11097,30,4145.26448589709,NA,46.0091515110578,"Tuvalu","TV",798,"ISO 3166-2:TV","Oceania","Polynesia","",9,61,NA
+"274","TWN",NA,NA,NA,NA,NA,NA,NA,NA,"Taiwan, Province of China","TW",158,"ISO 3166-2:TW","Asia","Eastern Asia","",142,30,NA
+"275","TZA","2016","TZ","Tanzania",55572201,947300,1923036.43276749,5653.9169921875,13,"Tanzania, United Republic of","TZ",834,"ISO 3166-2:TZ","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"276","UGA","2016","UG","Uganda",41487965,241550,1998235.5666956,5195.64306640625,21.87617046,"Uganda","UG",800,"ISO 3166-2:UG","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"277","UKR","2016","UA","Ukraine",45004645,603550,55848.1926299139,17776.53515625,52.4818082890465,"Ukraine","UA",804,"ISO 3166-2:UA","Europe","Eastern Europe","",150,151,NA
+"278","UMC","2016","XT","Upper middle income",2580012056,59651454,NA,32616.1544462009,55.6121745664281,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"279","UMI",NA,NA,NA,NA,NA,NA,NA,NA,"United States Minor Outlying Islands","UM",581,"ISO 3166-2:UM","Oceania","Micronesia","",9,57,NA
+"280","URY","2016","UY","Uruguay",3444006,176220,459091.844787727,42787.15234375,66.4,"Uruguay","UY",858,"ISO 3166-2:UY","Americas","Latin America and the Caribbean","South America",19,419,5
+"281","USA","2016","US","United States",323127513,9831510,57638.1590879883,111056.2890625,76.176736982841,"United States of America","US",840,"ISO 3166-2:US","Americas","Northern America","",19,21,NA
+"282","UZB","2016","UZ","Uzbekistan",31847900,447400,6258657.55820007,14167.640625,46.7912869407806,"Uzbekistan","UZ",860,"ISO 3166-2:UZ","Asia","Central Asia","",142,143,NA
+"283","VAT",NA,NA,NA,NA,NA,NA,NA,NA,"Holy See","VA",336,"ISO 3166-2:VA","Europe","Southern Europe","",150,39,NA
+"284","VCT","2016","VC","St. Vincent and the Grenadines",109643,390,18917.8097279352,24617.41015625,55.5746194230166,"Saint Vincent and the Grenadines","VC",670,"ISO 3166-2:VC","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"285","VEN","2016","VE","Venezuela, RB",31568179,912050,NA,29554.689453125,60,"Venezuela (Bolivarian Republic of)","VE",862,"ISO 3166-2:VE","Americas","Latin America and the Caribbean","South America",19,419,5
+"286","VGB","2016","VG","British Virgin Islands",30661,150,NA,NA,NA,"Virgin Islands (British)","VG",92,"ISO 3166-2:VG","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"287","VIR","2016","VI","Virgin Islands (U.S.)",107510,350,NA,35711.5703125,59.60831579895,"Virgin Islands (U.S.)","VI",850,"ISO 3166-2:VI","Americas","Latin America and the Caribbean","Caribbean",19,419,29
+"288","VNM","2016","VN","Vietnam",94569072,330967,47613166.8078545,10232.478515625,46.5,"Viet Nam","VN",704,"ISO 3166-2:VN","Asia","South-eastern Asia","",142,35,NA
+"289","VUT","2016","VU","Vanuatu",270402,12190,316092.595468968,5508.2421875,24,"Vanuatu","VU",548,"ISO 3166-2:VU","Oceania","Melanesia","",9,54,NA
+"290","WLD","2016","1W","World",7444027227,134325130.2,NA,34592.7818428135,45.784502792674,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"291","WLF",NA,NA,NA,NA,NA,NA,NA,NA,"Wallis and Futuna","WF",876,"ISO 3166-2:WF","Oceania","Polynesia","",9,61,NA
+"292","WSM","2016","WS","Samoa",195125,2840,10533.2453555413,27806.3203125,29.4117301129981,"Samoa","WS",882,"ISO 3166-2:WS","Oceania","Polynesia","",9,61,NA
+"293","XKX","2016","XK","Kosovo",1816200,10887,3295.28686268032,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"294","YEM","2016","YE","Yemen, Rep.",27584213,527970,277293.736707297,9373.2880859375,24.5792083636211,"Yemen","YE",887,"ISO 3166-2:YE","Asia","Western Asia","",142,145,NA
+"295","ZAF","2016","ZA","South Africa",56015473,1219090,77582.2423207959,42440.4921875,54,"South Africa","ZA",710,"ISO 3166-2:ZA","Africa","Sub-Saharan Africa","Southern Africa",2,202,18
+"296","ZMB","2016","ZM","Zambia",16591390,752610,13092.604055477,9490.2880859375,25.5065788475702,"Zambia","ZM",894,"ISO 3166-2:ZM","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
+"297","ZWE","2016","ZW","Zimbabwe",16150362,390760,1029.07664867845,3615.86108398438,23.11998904,"Zimbabwe","ZW",716,"ISO 3166-2:ZW","Africa","Sub-Saharan Africa","Eastern Africa",2,202,14
