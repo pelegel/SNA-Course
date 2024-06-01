@@ -1,0 +1,164 @@
+---
+title: "Q2"
+author: '318356995'
+date: "29 1 2023"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r libraries}
+library(sna)
+library(network)
+library(igraph)
+library(intergraph)
+library(ergm)
+library(statnet)
+library(goft)
+library(fitdistrplus)
+library(geodist)
+library(dplyr)
+set.seed(12)
+```
+
+
+
+```{r load network, echo=FALSE}
+filePath="C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/bioCollab05.csv"
+df<-read.csv(filePath, row.names = 1)
+df<-df[df$collab05_ij > 0,]
+net<-graph_from_data_frame(df, directed = F, vertices = NULL)
+
+```
+
+
+```{r 2.a, echo=FALSE}
+fit_power_law(degree(net)+1,implementation = "plfit")
+hist(degree(net), col="blue")
+
+fit_power_law(degree(net)+1,implementation = "plfit",xmin=1)
+
+
+# calculate degree
+d = igraph::degree(net, mode = "all")
+dd = degree.distribution(net, mode = "all", cumulative = FALSE)
+degree = 1:max(d)
+probability = dd[-1]
+
+# delete blank values
+nonzero.position = which(probability != 0)
+probability = probability[nonzero.position]
+degree = degree[nonzero.position]
+reg = lm(log(probability) ~ log(degree))
+cozf = coef(reg)
+power.law.fit = function(x) exp(cozf[[1]] + cozf[[2]] * log(x))
+
+
+# plot
+plot(probability ~ degree, log = "xy", xlab = "Degree (log)", ylab = "Probability (log)", 
+     col = 1, main = "Degree Distribution")
+curve(power.law.fit, col = "red", add = T, n = length(d))
+```
+
+
+```{r 2.b, echo=FALSE}
+set.seed(12)
+g2Rand<-erdos.renyi.game(gorder(net), gsize(net), type ="gnm", directed = FALSE,loops = FALSE)
+trg2<-transitivity(net)
+
+trrand<-transitivity(g2Rand)
+tr_ratio<-trg2/trrand 
+tr_ratio   ## has to bee greater then 10
+
+CPLg2<-average.path.length(net)
+CPL_rand<-average.path.length(g2Rand)
+CPL_ratio<-CPLg2/CPL_rand 
+CPL_ratio  ## has to be around 1
+
+```
+
+
+```{r 2.c, echo=FALSE}
+set.seed(12)
+erdos <- erdos.renyi.game(vcount(net), ecount(net), type="gnm", directed=F)
+ks.test(igraph::degree(erdos),degree(net)) #H0: same disttribution rejeced if p<0.05
+```
+
+
+
+```{r 2.e, echo=FALSE}
+set.seed(12)
+
+comp<-component.largest(asNetwork(net))
+
+nodes<-c()
+for (i in 1:length(comp)){
+  if (comp[i] == TRUE){
+    nodes<-append(nodes, i)
+  }
+}
+nodesId<-V(net)[nodes]
+largestComp<-igraph::induced_subgraph(net, nodesId)
+
+#edge betweeness
+eb <- cluster_edge_betweenness(largestComp)
+eb
+
+#louvain
+cl<-cluster_louvain(largestComp, resolution=1)
+modularity(cl)
+
+
+c2<-cluster_leading_eigen(largestComp)
+modularity(c2)
+
+c3<-cluster_fast_greedy(largestComp)
+modularity(c3)
+
+c4<-cluster_louvain(largestComp)
+modularity(c4)
+
+
+```
+
+
+```{r 2.f, echo=FALSE}
+#k-cores
+set.seed(12)
+
+kcores<-coreness(largestComp)
+kcores
+kcores_sizes <- table(kcores)
+louvain_sizes <- table(cl$membership)
+
+
+coords<-layout_with_fr(net)
+par(mfrow=c(1,2))
+plot(largestComp, layout=coords, vertex.color=kcores, vertex.size=7, vertex.label=NA, ,main="K-core")
+plot(largestComp, layout=coords, vertex.color=cl$membership,vertex.size=7, vertex.label=NA,  main="Louvain")
+
+
+```
+
+
+```{r 2.g, echo=FALSE}
+load("C:/Users/DELL/Desktop/לימודים מחשב/שנה ד/ניתוח רשתות חברתיות/מבחן/bioAreasProp.RDATA")
+cl1<-cluster_louvain(net, resolution=1)
+
+
+#add act_i attribute to vertices
+for (i in V(largestComp)){
+  for (j in 1:nrow(bioAreasProp)){
+      if (as.numeric(bioAreasProp[j,1]) == as.numeric(vertex_attr(largestComp,'name', index=i))){
+        V(largestComp)[i]$act_i<-as.numeric(bioAreasProp[j,3])
+      }
+  }
+}
+
+plot(largestComp, layout=layout_with_kk(largestComp), vertex.color=cl1$membership, vertex.size=log(vertex_attr(largestComp,"act_i"))*6, vertex.label.cex=0.5)
+
+```
